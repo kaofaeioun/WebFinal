@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品內頁</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mlens-1.0.js" type="text/javascript"></script>
+    <script src="js/all.js" type="text/javascript"></script>
+    <script>
+    	function divrefresh(){
+		    var p1=document.getElementById('brands_1');
+		    var p2=document.getElementById('brands_2');
+		    var p3=document.getElementById('brands_3');
+		    if(p1.style.display=='block'){
+		    	p1.style.display='none';
+		    	p2.style.display='block';
+		   	}else if(p2.style.display=='block'){
+		    	p2.style.display='none';
+		    	p3.style.display='block';
+		   	}else{
+		    	p3.style.display='none';
+		    	p1.style.display='block';
+		 	}
+		}
+    </script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header_container">
+			<div class="logo_wrapper">
+				<a href="index.html"><img src="images/logo.png"></a>
+			</div>
+			<div class="label_wrapper">
+				<img src="images/label1.png">
+				<img src="images/label2.png">
+				<img src="images/label3.png">
+				<img src="images/label4.png">
+				<img src="images/label5.png">
+				<img src="images/label6.png">
+			</div>
+
+			<img class="line1" src="images/line.jpg">
+
+			<div class="nav">
+				<ul class="nav_item">
+					<li><a href="">HOME</a></li>
+					<li><a href="">APPAREL</a></li>
+					<li><a href="">FASHION</a></li>
+					<li><a href="">NEWS</a></li>
+					<li><a href="">PORTFOLIO</a></li>
+					<li><a href="">CONTACT US</a></li>
+				</ul>
+			</div>
+
+			<span class="shopping_cart toggle">
+				<a href="">
+					<img src="images/shopping_cart.png">
+				</a>
+				<nav class="droplist">
+					<ul>
+						<li><div class="small"><img src="images/featured_p1.png" alt=""></div></li>
+						<li><div class="small"><img src="images/featured_p1.png" alt=""></div></li>
+						<li><div class="small"><img src="images/featured_p1.png" alt=""></div></li>
+						<li><div class="small"><img src="images/featured_p1.png" alt=""></div></li>
+					</ul>
+				</nav>
+			</span>
+
+			<img class="line2" src="images/line.jpg">
+		</div>
+		<div class="productdetail">
+			<div class="detail_left">
+				<div class="big">
+					<img class="jQzoom" src="images/featured_p1.png" data-big="images/featured_p1_big.png">
+				</div>
+				<div class="small">
+					<img src="images/featured_p1.png">
+				</div>
+			</div>
+			<div class="detail_right">
+				<h1>Product Name</h1>
+				<h2>Product Introduction</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, amet illum ea similique iure explicabo fugit illo dolor. Odio aliquam maiores nam reiciendis esse, itaque expedita, dicta odit nisi repellat!</p>
+				<h3>Availability： <span class="state">In Stock</span></h3>
+				<h3>$400.00</h3>
+				<hr>
+				<form action="" class="form">
+					QTY：<input type="text" name="Qity" id="">
+					<input type="submit" class="btn btn-submit" value="加入購物車">
+				</form>
+				<hr>
+					<input type="checkbox" name="" id=""> Add to Wishlist
+					<input type="checkbox" name="" id=""> Add to Compare
+				<hr>
+			</div>
+			<div class="detail_foot">
+				<h2>You May Also be Interstied in Following Products</h2>
+				<ul>
+					<li><img src="images/featured_p1.png" alt=""></li>
+					<li><img src="images/featured_p1.png" alt=""></li>
+					<li><img src="images/featured_p1.png" alt=""></li>
+					<li><img src="images/featured_p1.png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+		<div class="productrecom">
+			<form action="Product_List.html">
+				<h2>Related Products</h2>
+				<hr>
+				<p>Check Item to Add to the Cart</p>
+				<hr>
+				<ul class="recomlist">
+					<li>
+						<input type="checkbox" name="">
+						<img src="images/featured_p1.png" alt="">
+						<p>$0.00</p>
+						<a href="">Add to Wishlist</a>
+					</li>
+				</ul>
+				<h3>My Cart</h3>
+				<hr>
+				<p>There is <span class="state"> 0 item</span> in your cart.</p>
+				<hr>
+				<div class="checkarea">
+					<p>Cart Subtotal： $0.00</p>
+					<input type="submit" class="btn btn-submit" value="結帳">
+				</div>
+				<h3>Compare Products</h3>
+				<hr>
+				<p>You have no items to compare.</p>
+			</form>
+		</div>
+
+			<div class="brands_wrapper">
+				<div class="products_header">
+					<div class="title">CREAT &nbsp OUR &nbsp BRANDS</div>
+					<div class="line_short"><img src="images/line_short.jpg"></div>
+					<div class="arrow">
+						<img src="images/arrow_r.jpg" onclick="javascript:divrefresh();">
+						<img src="images/arrow_l.png" onclick="javascript:divrefresh();">
+					</div>
+				</div>
+				<div class="brands" id="brands_1" style="display:block;">
+					<a href=""><img src="images/brands1.png"></a>
+					<a href=""><img src="images/brands2.png"></a>
+					<a href=""><img src="images/brands3.png"></a>
+					<a href=""><img src="images/brands4.png"></a>
+					<a href=""><img src="images/brands5.png"></a>
+				</div>
+				<div class="brands" id="brands_2" style="display:none;">
+					<a href=""><img src="images/brands5.png"></a>
+					<a href=""><img src="images/brands3.png"></a>
+					<a href=""><img src="images/brands2.png"></a>
+					<a href=""><img src="images/brands1.png"></a>
+					<a href=""><img src="images/brands4.png"></a>
+				</div>
+				<div class="brands" id="brands_3" style="display:none;">
+					<a href=""><img src="images/brands2.png"></a>
+					<a href=""><img src="images/brands5.png"></a>
+					<a href=""><img src="images/brands3.png"></a>
+					<a href=""><img src="images/brands4.png"></a>
+					<a href=""><img src="images/brands1.png"></a>
+				</div>
+			</div>
+
+		<div class="footer_container">
+			<div class="footer_part">
+				<div class="part1_1"><img src="images/logo2.png"></div>
+				<div class="part1_2"><p>Follow &nbsp Us</p></div>
+				<div class="part1_3">
+					<a href=""><img src="images/label2.png"></a>
+					<a href=""><img src="images/label3.png"></a>
+					<a href=""><img src="images/label4.png"></a>
+					<a href=""><img src="images/label5.png"></a>
+					<a href=""><img src="images/label6.png"></a>
+				</div>
+			</div>
+
+			<div class="footer_part2">
+				<div class="part2_1"><p>Recent &nbsp Posts</p></div>
+				<div class="part2_2"><img src="images/new_camera_set.png"></div>
+				<div class="part2_3"><img src="images/special_camera_lenses.png"></div>
+			</div>
+
+			<div class="footer_part3">
+				<div class="part3_1">
+					<strong>Contact &nbsp Us</strong><br><br>
+				</div>
+				<div class="part3_2">
+					1000 Ljubljana<br>Celovska cesta 123<br>Country Slovenia<br><br>
+					Phone:(+386) 40 123 456<br>
+					Phone:(+386) 40 654 123<br><br>
+
+					info@premiumcoding.com
+				</div>
+			</div>
+
+			<div class="footer_part4">
+				<div class="part4_1"><strong>What &nbsp People &nbsp Say</strong></div>
+				<div class="part4_2"><img src="images/say1.png"></div>
+				<div class="part4_3"><img src="images/say2.png"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
